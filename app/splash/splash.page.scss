@@ -1,0 +1,21 @@
+@-webkit-keyframes scale-in-ver-center{0%{-webkit-transform:scaleY(0);transform:scaleY(0);opacity:1}100%{-webkit-transform:scaleY(1);transform:scaleY(1);opacity:1}}@keyframes scale-in-ver-center{0%{-webkit-transform:scaleY(0);transform:scaleY(0);opacity:1}100%{-webkit-transform:scaleY(1);transform:scaleY(1);opacity:1}}
+$font: "Poppins";
+ion-content{
+    --background: url('bgg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    --ion-background-color: transparent;
+}
+.container{
+
+    
+    img{
+        margin-top: 50%;
+        height: 200px;
+    }
+    h1{
+        
+        color: #8C52FF;
+        margin-top: 50%;
+        margin: 10px;
+    }
+}

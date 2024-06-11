@@ -1,0 +1,81 @@
+
+
+<ion-content >
+  
+  <ion-header>
+    <ion-toolbar>
+      <ion-title><strong>Pendaftaran Calon Mahasiswa</strong></ion-title>
+      <ion-progress-bar type="indeterminate"></ion-progress-bar>
+    </ion-toolbar>
+  </ion-header>
+  
+  <form class="container ">
+    <input [(ngModel)]="nama" name="nama" required='' type="text">
+    <label alt='Nama Kamu' placeholder='Adaptive Placeholder'></label>
+
+    <ion-item class="form-group">
+    
+      <ion-select  [(ngModel)]="jenis_kelamin" placeholder="Jenis Kelaminr" name="jenis_kelamin">
+        <ion-select-option value="L">Laki-laki</ion-select-option>
+        <ion-select-option value="P">Perempuan</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <input [(ngModel)]="nomor"  name="nomor" required='' type="text">
+    <label alt='Nomor Handphone' placeholder='Adaptive Placeholder'></label>
+
+    <input [(ngModel)]="email"  name="email" required='' type="text">
+    <label alt='Email Kamu' placeholder='Adaptive Placeholder'></label>
+
+    <input [(ngModel)]="asal_sekolah"  name="asal_sekolah" required='' type="text">
+    <label alt='Asal Sekolah' placeholder='Adaptive Placeholder'></label>
+
+    <ion-item class="form-group">
+    
+      <ion-select [(ngModel)]="prodi" placeholder="Pilih Program Studi" name="prodi" required='' type="text">
+        <ion-select-option value="Sistem Informasi">Sistem Informasi</ion-select-option>
+        <ion-select-option value="Teknik Informatika">Teknik Informatika</ion-select-option>
+        <ion-select-option value="Teknologi Informasi">Teknologi Informasi</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item class="form-group">
+    
+      <ion-select [(ngModel)]="jenjang" placeholder="Pilih Jenjang" name="jenjang" required='' type="text">
+        <ion-select-option value="D3">D3</ion-select-option>
+        <ion-select-option value="S1">S1</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item class="form-group">
+    
+      <ion-select [(ngModel)]="kelas" placeholder="Pilih Kelas" name="kelas">
+        <ion-select-option value="A">A</ion-select-option>
+        <ion-select-option value="B">B</ion-select-option>
+        <ion-select-option value="C">C</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item class="form-group">
+    
+      <ion-select [(ngModel)]="sumber_informasi" placeholder="Pilih Sumber Informasi" name="sumber_informasi">
+        <ion-select-option value="Website">Website Kampus</ion-select-option>
+        <ion-select-option value="Mahasiswa">Mahasiswa</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-button
+  expand="block"
+  (click)="addData()"
+  color="primary">
+  Simpan
+</ion-button>
+  </form>
+
+  
+
+
+ 
+
+  
+</ion-content>
